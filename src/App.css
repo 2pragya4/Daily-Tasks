@@ -1,0 +1,91 @@
+/* * is the universal selector */
+
+*{
+  margin : 0px;
+  padding: 0px;
+
+  /* font of roboto slab is applied to the whole page*/
+  font-family: 'Roboto Slab', serif;
+}
+
+/* importing font from google font*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+nav{
+  background-color: rgb(23, 23, 23);
+  color: rgb(230, 221, 221);
+  padding: 20px;
+  text-align: center;
+}
+
+.container{
+  background-color: rgb(209, 205, 187);
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.container > h1{
+  text-align: center;
+  margin: 20px;
+  
+}
+
+.container > form{
+  display: flex;
+  flex-direction: column;
+}
+
+input,textarea,button{
+  padding: 20px 40px;
+  margin: 15px;
+  border: 1px solid rgb(71, 69, 69);
+  border-radius: 3px;
+  font-size: 1.2rem;
+}
+textarea{
+  padding-top: 35px;
+}
+
+button{
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+  background-color: rgb(54, 40, 40);
+  color: white;
+}
+
+.task{
+  border: 1px solid rgb(71, 69, 69);
+  display: flex; 
+  padding: 20px;
+  border-radius: 5px;
+  background-color: white;
+  align-items: center;
+}
+
+.task > div{
+  width: 90%;
+  height: auto;
+}
+
+.task button{
+  border-radius: 100%;
+  width: 52px;
+  height: 52px;
+  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task button:hover{
+  background-color: rgb(123, 111, 111);
+}
+
+.task span{
+  color: rgb(43, 41, 41);
+  margin: 20px 0px;
+}
